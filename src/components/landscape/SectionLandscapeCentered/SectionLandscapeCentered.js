@@ -2,7 +2,10 @@ import "./SectionLandscapeCentered.css";
 
 const sectionLandscapeCentered = (props) =>{
     const sectionsInfo= props.sections[props.order];
-
+    let imageClasses= "imageDiv";
+    if (sectionsInfo.image === null){
+        imageClasses= "hidden"
+    }
     return(
         <div className="sectionLandscapeCentered">
             <div className="sectionHeadingDiv">
@@ -11,7 +14,7 @@ const sectionLandscapeCentered = (props) =>{
             </div>
             <div className="content">
                 <div className="left">
-                    <div className="imageDiv">
+                    <div className={imageClasses}>
                         <img src= {sectionsInfo.image} alt={sectionsInfo.title}></img>
                     </div>
                     

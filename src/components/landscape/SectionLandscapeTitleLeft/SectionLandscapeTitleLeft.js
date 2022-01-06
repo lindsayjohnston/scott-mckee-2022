@@ -2,6 +2,10 @@ import "./SectionLandscapeTitleLeft.css";
 
 const sectionLandscapeTitleLeft = (props) =>{
     const sectionsInfo= props.sections[props.order];
+    let imageClasses= "imageDiv";
+    if (sectionsInfo.image === null){
+        imageClasses= "hidden"
+    }
 
     return(
         <div className="sectionLandscapeTitleLeft">
@@ -15,7 +19,7 @@ const sectionLandscapeTitleLeft = (props) =>{
                     <div className="content2Div"> {sectionsInfo.content2}</div>
                 </div>
                 <div className="right"> 
-                    <div className="imageDiv">
+                    <div className={imageClasses}>
                         <img src={sectionsInfo.image} alt= {sectionsInfo.title}></img>
                     </div>
                 </div>

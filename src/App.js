@@ -6,6 +6,7 @@ import topImage from '../src/media/images/hello-world.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.png';
 import contactImage from '../src/media/images/red-phone.jpg';
+import CreativeDiv from '../src/components/creativeDiv/creativeDiv';
 
 
 let screenOrientation= null;
@@ -32,6 +33,12 @@ class App extends React.Component {
             <h1>Welcome to my portfolio!</h1>
             <p>Take a peek at what I do...</p>
           </div>,
+        },
+        { id: "creative",
+        title: "Creative",
+        image: null,
+        content1: <CreativeDiv/>,
+        content2: null,
         },
         { id: "web-development",
         title: "Web Development",
@@ -64,16 +71,7 @@ class App extends React.Component {
           ,
         content2: null
         },
-        { id: "creative",
-        title: "Creative",
-        image: workImage,
-        content1: 
-          <div>
-            ART ICONS GO HERE
-          </div>   
-          ,
-        content2: null
-        },
+       
         { id: "about",
         title: "About",
         image: aboutImage,
@@ -182,6 +180,7 @@ class App extends React.Component {
     return (
       <div className={appClasses}>
         {appBody}
+        
       </div>
     );
 
