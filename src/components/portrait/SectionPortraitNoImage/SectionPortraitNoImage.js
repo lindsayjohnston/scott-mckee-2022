@@ -1,7 +1,7 @@
-import "./SectionPortrait.css";
+import "./SectionPortraitNoImage.css";
 
-const sectionPortrait = (props) =>{
-    const sectionClasses= "sectionPortrait " + props.fontClass + " " + props.bgClass;
+const sectionPortraitNoImage = (props) =>{
+    const sectionClasses= "sectionPortraitNoImage " + props.fontClass + " " + props.bgClass;
     const sectionsInfo= props.sections[props.order];
   
 
@@ -15,9 +15,7 @@ const sectionPortrait = (props) =>{
                 <div className="content1Div">
                     {sectionsInfo.content1}
                 </div>
-                <div className="imageDiv">
-                    <img src={sectionsInfo.image} alt= {sectionsInfo.title}></img>
-                </div>
+                
                 <div className="content2Div">
                     {sectionsInfo.content2}
                 </div>
@@ -27,4 +25,4 @@ const sectionPortrait = (props) =>{
 
 }
 
-export default sectionPortrait;
+export default sectionPortraitNoImage;
