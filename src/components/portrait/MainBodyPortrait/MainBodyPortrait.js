@@ -38,8 +38,8 @@ const mainBodyPortrait = (props) =>{
             <SectionPortrait
                 sections={props.sections}
                 order="4"
-                fontClass="fontColorLight"
-                bgClass="bgColorDark" />
+                fontClass="fontColorDark"
+                bgClass="bgColorLight" />
         </div>
     )
   };
