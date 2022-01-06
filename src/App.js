@@ -6,7 +6,7 @@ import topImage from '../src/media/images/hello-world.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.png';
 import contactImage from '../src/media/images/red-phone.jpg';
-import CreativeDiv from '../src/components/creativeDiv/creativeDiv';
+import Gallery from './components/gallery/gallery';
 
 
 let screenOrientation= null;
@@ -37,7 +37,7 @@ class App extends React.Component {
         { id: "creative",
         title: "Creative",
         image: null,
-        content1: <CreativeDiv/>,
+        content1: <Gallery/>,
         content2: null,
         },
         { id: "web-development",

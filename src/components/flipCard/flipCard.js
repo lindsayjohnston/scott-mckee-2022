@@ -1,5 +1,5 @@
 import './flipCard.css';
-import testImage from '../../media/images/computer-lady-hands.png';
+
 
 const flipCard = (props)=>{
     return(
@@ -7,11 +7,11 @@ const flipCard = (props)=>{
             <div className='flipCard'>
                 <div className='flipCardInner'>
                     <div class="flipCardFront">
-                        <img src={testImage} alt="test"></img>
+                        <img src={props.image} alt={props.alt}></img>
                     </div>
                     <div class="flipCardBack">
-                        <h3>Title goes here</h3>
-                        <p>A little bit of body text</p>
+                        <a href={props.link} target="_blank" rel= "noreferrer"><h3>See Work</h3></a>
+                        {props.description}
                     </div>
                 </div>
             </div>

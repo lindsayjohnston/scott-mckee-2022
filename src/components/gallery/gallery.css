@@ -1,5 +1,5 @@
-.creativeDiv{
-    background-color: gold;
+.gallery{
+    /* background-color: gold; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
