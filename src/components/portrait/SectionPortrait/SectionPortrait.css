@@ -9,6 +9,7 @@
     width: 100%;
     /* background-color: blue; */
     height: 10vh;
+    max-height: 70px;
     position: relative;
     /* this is for the anchor link to be positioned above */
     display: flex;
@@ -16,11 +17,10 @@
     align-items: center;
 }
 
-
 .sectionPortrait > .sectionHeadingDiv > .anchorLinkDiv {
     position: absolute;
-    height: 8vh;
-    top: -8vh;
+    height: 7vh;
+    top: -7vh;
 }
 
 .sectionPortrait > .content {
@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 10px;
     /* min-height: 300px; */
 }
 
@@ -38,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
     /* background-color: coral; */
 }
 
@@ -49,11 +51,13 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    min-width: 300px;
+    overflow: hidden;
 }
 
 
 .sectionPortrait > .content >  .imageDiv  > .imageContainer> img{
-  max-width: 100%;
+  max-height: 100%;
 }
 
 
