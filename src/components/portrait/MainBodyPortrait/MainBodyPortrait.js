@@ -10,6 +10,7 @@ const mainBodyPortrait = (props) =>{
     return(
         <div className="mainBodyPortrait">
             <MenuPortrait
+                siteTitle={props.siteTitle}
                 sections={props.sections}
                 barsClick={() => props.barsClick()}
                 menuModalShown={props.menuModalShown}
@@ -17,7 +18,6 @@ const mainBodyPortrait = (props) =>{
             />
             <SectionPortraitTop
                 sections={props.sections}
-
             />
             <SectionPortrait
                 sections={props.sections}
@@ -32,6 +32,11 @@ const mainBodyPortrait = (props) =>{
             <SectionPortrait
                 sections={props.sections}
                 order="3"
+                fontClass="fontColorLight"
+                bgClass="bgColorDark" />
+            <SectionPortrait
+                sections={props.sections}
+                order="4"
                 fontClass="fontColorLight"
                 bgClass="bgColorDark" />
         </div>

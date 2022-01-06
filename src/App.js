@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/MainBodyLandscape';
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
-import topImage from '../src/media/logos/bocaloud_first_logo_.png';
+import topImage from '../src/media/images/hello-world.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.png';
 import contactImage from '../src/media/images/red-phone.jpg';
@@ -18,6 +18,7 @@ if((window.innerHeight / window.innerWidth) < .87){
 class App extends React.Component {
   
   state= {
+    siteTitle: 'Lindsay K. Johnston',
     sectionShown:'top',
     menuModalShown: false,
     screenOrientation:screenOrientation,
@@ -25,41 +26,51 @@ class App extends React.Component {
       { id: "top",
         title: null,
         image: topImage,
-        content1: 
-        <button>
-          <a href="https://forms.gle/bZXqjd5rsD8wwTm5A" target="_blank" rel="noreferrer">Click to Get a Website By Next Week!</a> 
-        </button>, 
+        content1: null, 
         content2:
           <div>
-            <h1>Get an affordable website - fast!</h1>
-            <p>Let's get you online.</p>
+            <h1>Welcome to my portfolio!</h1>
+            <p>Take a peek at what I do...</p>
           </div>,
         },
-        { id: "work",
-        title: "Our Work",
+        { id: "web-development",
+        title: "Web Development",
         image: workImage,
         content1: 
           <div>
             <ul>
             <li>
-                <a href="https://master.d3psjk7ty1d27s.amplifyapp.com/" target="_blank" rel="noreferrer">
-                  Flower Farm Website</a>
-              </li>
-              <li>
-                <a href="https://master.d3euk1bu830ig4.amplifyapp.com/" target="_blank" rel="noreferrer">
-                  Bait & Tackle Website</a>
+                <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
+                  Vanna Oh! - Musician Website</a>
               </li>
               <li>
                 <a href="https://www.micahclay.us/" target="_blank" rel="noreferrer">
                   Micah Clay - Musician Website</a>
               </li>
               <li>
-                <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
-                  Vanna Oh! - Musician Website</a>
+                <a href="https://github-map-real.herokuapp.com/" target="_blank" rel="noreferrer">
+                 GitHub User Map - API Study</a>
+              </li>
+              <li>
+                <a href="https://master.d2sxml8azj8dyl.amplifyapp.com/" target="_blank" rel="noreferrer">
+                 Points Calculator - CSV Upload Study</a>
+              </li>
+              <li>
+                <a href="https://main.d25r1kk5mc9ae9.amplifyapp.com/" target="_blank" rel="noreferrer">
+                 Chipotle Clone - React.js Study</a>
               </li>
             </ul> 
-          </div>
-          
+          </div>   
+          ,
+        content2: null
+        },
+        { id: "creative",
+        title: "Creative",
+        image: workImage,
+        content1: 
+          <div>
+            ART ICONS GO HERE
+          </div>   
           ,
         content2: null
         },
@@ -68,11 +79,11 @@ class App extends React.Component {
         image: aboutImage,
         content1: 
           <div>
-            <h2>L.J.</h2>
-            <h3>Small Business Owner - Tri-Cities Native</h3>
+            <h2>Lindsay K. Johnston</h2>
+            <h3>Creator & Entrepeneur</h3>
           </div>,
         content2:
-          <p>Hi! I'm the founder of Bocaloud. For over a decade I've worked in the nonprofit and small businesss sectors. There are so many incredible organizations in need of sleek and affordable websites. I'm here to fill that need!</p>
+          <p>My work experiences have varied greatly: from the non-profit sector to the service industry, from education to creative director for a rock-and-roll band. The common threads that weave through all of my professional experiences are creativity and innovation. Whether I am creating a teaching strategy, an app or a t-shirt design, I am always looking to improve upon prior work and present the project in an engaging and professional way. I strive to communicate directly and honestly, work efficiently, and push for female representation in historically male-dominated fields.</p>
         },
         { id: "contact",
         title: "Contact",
@@ -147,13 +158,14 @@ class App extends React.Component {
  
     if (this.state.screenOrientation === "landscape") {
       appBody = <MainBodyLandscape 
+                  siteTitle={this.state.siteTitle}
                   menuClick = {this.sectionShownHandler}
                   sectionShown= {this.state.sectionShown} 
                   sections={this.state.sections} />;
       appClasses= "appLandscape";
     } else {
       appBody = <MainBodyPortrait 
-                  // menuClick = {this.sectionShownHandler}
+                  siteTitle={this.state.siteTitle}
                   barsClick= {this.menuModalOpenHandler}
                   closeModalClick={this.menuModalCloseHandler}
                   menuModalShown= {this.state.menuModalShown}

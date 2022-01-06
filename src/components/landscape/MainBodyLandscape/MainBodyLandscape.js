@@ -10,7 +10,9 @@ const mainBodyLandscape = (props) =>{
   
   return(
       <div className="mainBodyLandscape">
-           <MenuLandscape sections={props.sections}/>
+           <MenuLandscape 
+               siteTitle={props.siteTitle}
+               sections={props.sections}/>
            <SectionLandscapeTop 
                 sections={props.sections}/>
            <SectionLandscapeCentered 
@@ -24,6 +26,10 @@ const mainBodyLandscape = (props) =>{
            <SectionLandscapeTitleLeft 
                 sections={props.sections}
                 order= "3"
+                />
+          <SectionLandscapeTitleRight 
+                sections={props.sections}
+                order= "4"
                 />
       </div>
   )
