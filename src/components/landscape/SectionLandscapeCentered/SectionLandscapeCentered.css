@@ -1,7 +1,7 @@
 .sectionLandscapeCentered{
     background-color: var(--main-color);
     color: var(--light-color);
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,12 +27,22 @@
 
 .sectionLandscapeCentered > .content {
     width: 100%;
-    height: 80%;
-    max-width: 900px;
+    /* height: 80%; */
+    max-width: 1300px;
     /* background-color: coral; */
     /* that's 2% of the parent width I think */
     display: flex;
 }
+
+.sectionLandscapeCentered > .content >.centered {
+    width: 100%;
+    padding: 2%;
+}
+
+/* Below this shouldn't be used for this app */
+/* Below this shouldn't be used for this app */
+/* Below this shouldn't be used for this app */
+/* Below this shouldn't be used for this app */
 
 .sectionLandscapeCentered > .content > .left {
     width: 50%;

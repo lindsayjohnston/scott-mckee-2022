@@ -1,10 +1,17 @@
 import './creativeDiv.css';
+import FlipCard from '../flipCard/flipCard';
 
 const creativeDiv = (props)=>{
     return(
         <div className='creativeDiv'>
-            icons go here
+           <FlipCard />
+           <FlipCard />
+           <FlipCard />
+           <FlipCard />
+           <FlipCard />
+           <FlipCard />
         </div>
+        
     )
 };
 

@@ -13,13 +13,12 @@ const sectionLandscapeCentered = (props) =>{
                 <h1>{sectionsInfo.title}</h1>
             </div>
             <div className="content">
-                <div className="left">
+                {/* <div className="left">
                     <div className={imageClasses}>
                         <img src= {sectionsInfo.image} alt={sectionsInfo.title}></img>
                     </div>
-                    
-                </div>
-                <div className="right">
+                </div> */}
+                <div className="centered">
                     <div className="content1Div"> {sectionsInfo.content1}</div>
                     <div className="content2Div"> {sectionsInfo.content2}</div>
                 </div> 
