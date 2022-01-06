@@ -2,6 +2,7 @@
     background-color: var(--light-color);
     color: var(--dark-color);
     height: 500px;
+    /* padding-bottom: 80px; */
     display: flex;
     flex-direction: column;
     align-items: center;

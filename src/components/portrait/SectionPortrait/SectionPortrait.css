@@ -39,8 +39,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    padding-bottom: 10px;
     /* background-color: coral; */
+}
+
+.sectionPortrait > .content  p {
+    /* background-color: cornflowerblue; */
+    margin: 10px;
 }
 
 .sectionPortrait > .content > .imageDiv> .imageContainer{

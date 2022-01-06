@@ -89,13 +89,11 @@ class App extends React.Component {
         },
         { id: "contact",
         title: "Contact",
-        image: contactImage,
+        image: null,
         content1: 
-          <div>
+          <div className='contactDiv'>
             <h3>E-mail:</h3>
-            <a href="mailto:bocaloudcontact@gmail.com" >bocaloudcontact@gmail.com</a>
-            <h3>Social:</h3>
-            <a href="https://www.instagram.com/bocaloud/" target="_blank" rel="noreferrer" >Instagram</a>
+            <a href="mailto:lindsaykjohnston@outlook.com" >lindsaykjohnston@outlook.com</a>
           </div>
         },
     
