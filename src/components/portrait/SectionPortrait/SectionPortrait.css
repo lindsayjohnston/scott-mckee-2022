@@ -38,12 +38,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: coral;
+    /* background-color: coral; */
 }
 
 .sectionPortrait > .content > .imageDiv> .imageContainer{
     /* width: 100%; */
-    background-color: thistle;
+    /* background-color: thistle; */
     height: 50vh;
     display: flex;
     justify-content: center;

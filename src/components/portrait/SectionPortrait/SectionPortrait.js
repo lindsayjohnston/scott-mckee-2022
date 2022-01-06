@@ -3,7 +3,10 @@ import "./SectionPortrait.css";
 const sectionPortrait = (props) =>{
     const sectionClasses= "sectionPortrait " + props.fontClass + " " + props.bgClass;
     const sectionsInfo= props.sections[props.order];
-  
+    let imageDivClasses= "imageDiv"
+    if(sectionsInfo.image === null){
+        imageDivClasses= "hidden"
+    }
 
     return(
         <div className={sectionClasses}>
@@ -15,7 +18,7 @@ const sectionPortrait = (props) =>{
                 <div className="content1Div">
                     {sectionsInfo.content1}
                 </div>
-                <div className="imageDiv">
+                <div className={imageDivClasses}>
                     <div className="imageContainer">
                         <img src={sectionsInfo.image} alt={sectionsInfo.title}></img>
                     </div>

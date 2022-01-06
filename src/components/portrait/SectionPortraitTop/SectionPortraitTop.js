@@ -9,11 +9,13 @@ const sectionPortraitTop = (props) =>{
                 <div className="anchorLinkDiv" id={sectionsInfo.id}></div>
             </div>
             <div className="content">
-                <div> 
+               
                     <div className="imageDiv">
-                        <img src={sectionsInfo.image} alt={sectionsInfo.title}></img>
+                        <div className="imageContainer">
+                            <img src={sectionsInfo.image} alt={sectionsInfo.title}></img>
+                        </div>
                     </div>
-                </div>
+       
                 <div className="content1Div">
                    {sectionsInfo.content1}
                 </div>

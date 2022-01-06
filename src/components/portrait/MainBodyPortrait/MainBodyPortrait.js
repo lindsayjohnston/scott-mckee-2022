@@ -2,7 +2,7 @@ import './MainBodyPortrait.css';
 import MenuPortrait from '../MenuPortrait/MenuPortrait';
 import SectionPortraitTop from "../SectionPortraitTop/SectionPortraitTop";
 import SectionPortrait from "../SectionPortrait/SectionPortrait";
-import SectionPortraitNoImage from "../SectionPortraitNoImage/SectionPortraitNoImage";
+
 
 
 const mainBodyPortrait = (props) =>{
@@ -20,7 +20,7 @@ const mainBodyPortrait = (props) =>{
             <SectionPortraitTop
                 sections={props.sections}
             />
-            <SectionPortraitNoImage
+            <SectionPortrait
                 sections={props.sections}
                 order="1"
                 fontClass="fontColorLight"

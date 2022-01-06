@@ -14,7 +14,8 @@
 .sectionPortraitTop > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */
-    height: 8vh;
+    height: 10vh;
+    max-height: 70px;
     position: relative;
     /* this is for the anchor link to be positioned above */
     display: flex;
@@ -46,25 +47,26 @@
     align-items: center;
 }
 
-.sectionPortraitTop > .content > div > .imageDiv{
+
+.sectionPortraitTop > .content > .imageDiv >.imageContainer {
+    /* background-color: cornflowerblue; */
     width: 100%;
-    /* background-color: thistle; */
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
-.sectionPortraitTop > .content > div > .imageDiv >img{
+.sectionPortraitTop > .content > .imageDiv >.imageContainer >img{
     /* height: 90%; */
     flex-shrink: 0;
-    /* min-width: 100%; */
-    min-height: 100%;
-    min-width: 100%;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
+
+.sectionPortraitTop > .content > .content1Div{
+    margin-top: 30px;
+}
+
+.sectionPortraitTop > .content > .content2Div{
+    margin-bottom: 30px;
+}
 
 
 
