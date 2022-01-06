@@ -34,24 +34,26 @@
 .sectionPortrait > .content > div {
     /* width: 100%; */
     /* border: 1px solid black; */
-    padding: 2%;
+    /* padding: 2%; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: coral;
 }
 
-.sectionPortrait > .content > .imageDiv{
+.sectionPortrait > .content > .imageDiv> .imageContainer{
     /* width: 100%; */
-    /* background-color: thistle; */
+    background-color: thistle;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
 }
 
-.sectionPortrait > .content >  .imageDiv >img{
-  height: 80%;
+
+.sectionPortrait > .content >  .imageDiv  > .imageContainer> img{
+  max-width: 100%;
 }
 
 

@@ -16,7 +16,9 @@ const sectionPortrait = (props) =>{
                     {sectionsInfo.content1}
                 </div>
                 <div className="imageDiv">
-                    <img src={sectionsInfo.image} alt= {sectionsInfo.title}></img>
+                    <div className="imageContainer">
+                        <img src={sectionsInfo.image} alt={sectionsInfo.title}></img>
+                    </div>
                 </div>
                 <div className="content2Div">
                     {sectionsInfo.content2}
