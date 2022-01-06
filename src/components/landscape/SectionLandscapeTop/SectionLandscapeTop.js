@@ -9,20 +9,21 @@ const sectionLandscapeTop = (props) =>{
                 <div className="anchorLinkDiv" id={topSection.id}></div>
             </div>
             <div className="content">
-                <div className="left">
+
+                <div className="top"> 
+                    <div className="imageDiv">
+                        <img src={topSection.image}></img>
+                  
+                    </div>
+                 
+                </div>
+                <div className="bottom">
                   <div className="content2Div">
                       {topSection.content2}
                   </div>
                   <div className="content1Div">
                       {topSection.content1}
                   </div>
-                </div>
-                <div className="right"> 
-                    <div className="imageDiv">
-                        <img src={topSection.image}></img>
-                  
-                    </div>
-                 
                 </div>
             </div>
         </div>
