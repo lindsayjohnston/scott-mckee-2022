@@ -1,5 +1,4 @@
 .footer{
-
    display: flex;
    justify-content: center;
 }
@@ -12,3 +11,5 @@
 .footer p:hover{
     color: var(--main-color)
 }
+
+/* TEST */
