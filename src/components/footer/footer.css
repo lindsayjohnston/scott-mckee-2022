@@ -9,7 +9,6 @@
     margin: 0;
     font-size: small;
 }
-
 .footer p:hover{
     color: var(--main-color)
 }
