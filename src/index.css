@@ -22,7 +22,7 @@ body {
 h1{
   margin:0;
   padding: 0;
-  font-size: 32px; 
+  font-size: 30px; 
 }
 
 h2, h3{
@@ -46,7 +46,7 @@ a {
 }
 
 a:hover{
-  color: var(--secondary-color);
+  color: var(--dark-color);
 }
 
 .bgColorMain{
@@ -94,7 +94,7 @@ button {
 
 button:hover,
 button:focus {
-  background: var(--dark-color);
+  background: var(--secondary-color);
   color: var(--light-color)
 }
 

@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.sectionPortrait  .websiteLinks  a:hover{
+    color:var(--main-color);
+}
+
 .sectionPortrait > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */

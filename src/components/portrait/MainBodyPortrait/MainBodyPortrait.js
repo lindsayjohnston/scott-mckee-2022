@@ -25,7 +25,7 @@ const mainBodyPortrait = (props) =>{
                 order="1"
                 fontClass="fontColorLight"
                 bgClass="bgColorMain" />
-            <SectionPortrait
+            <SectionPortrait 
                 sections={props.sections}
                 order="2"
                 fontClass="fontColorDark"
@@ -39,7 +39,7 @@ const mainBodyPortrait = (props) =>{
                 sections={props.sections}
                 order="4"
                 fontClass="fontColorDark"
-                bgClass="bgColorLight" />
+                bgClass="bgColorMain" />
         </div>
     )
   };

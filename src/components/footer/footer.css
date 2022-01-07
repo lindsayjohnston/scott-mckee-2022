@@ -1,0 +1,11 @@
+.footer{
+   background-color: ;
+   display: flex;
+   justify-content: center;
+}
+
+.footer p{
+    color: var(--dark-color);
+    margin: 0;
+    font-size: small;
+}

@@ -10,7 +10,7 @@ const flipCard = (props)=>{
                         <img src={props.image} alt={props.alt}></img>
                     </div>
                     <div class="flipCardBack">
-                        <a href={props.link} target="_blank" rel= "noreferrer"><h3>See Work</h3></a>
+                        <a href={props.link} target="_blank" rel= "noreferrer"><h3>See It Bigger</h3></a>
                         {props.description}
                     </div>
                 </div>

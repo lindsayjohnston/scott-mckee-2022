@@ -12,6 +12,8 @@
     justify-content: space-between; 
 }
 
+
+
 .menuPortrait > .title{
    padding: 2vw;
    /* background-color: chartreuse; */
@@ -23,6 +25,9 @@
     font-size: 4vh;
     /* background-color: darkgrey; */
  }
+ .menuPortrait > .title > a:hover{
+    color: var(--main-color);
+}
 
 .menuPortrait > .hamburgerMenuDiv{
     /* background-color: crimson; */
