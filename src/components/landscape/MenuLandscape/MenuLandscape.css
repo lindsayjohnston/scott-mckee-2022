@@ -16,6 +16,10 @@
    /* background-color: chartreuse; */
 }
 
+.menuLandscape a:hover{
+    color: var(--main-color);
+}
+
 .menuLandscape > .sectionLinks{
     /* background-color: crimson; */
     display: flex;

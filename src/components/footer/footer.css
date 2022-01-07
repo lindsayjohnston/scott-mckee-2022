@@ -1,5 +1,5 @@
 .footer{
-   background-color: ;
+
    display: flex;
    justify-content: center;
 }
@@ -8,4 +8,8 @@
     color: var(--dark-color);
     margin: 0;
     font-size: small;
+}
+
+.footer p:hover{
+    color: var(--main-color)
 }

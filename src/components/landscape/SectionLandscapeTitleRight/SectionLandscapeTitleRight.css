@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.sectionLandscapeTitleRight .websiteLinks a:hover{
+    color: var(--main-color);
+}
+
 .sectionLandscapeTitleRight > .sectionHeadingDiv{
     width: 100%;
     /* background-color: blue; */
