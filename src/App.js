@@ -77,7 +77,7 @@ class App extends React.Component {
         content1: 
           <div>
             <h2>Lindsay K. Johnston</h2>
-            <h3>Creator & Entrepeneur</h3>
+            <h3>Creator & Entrepreneur</h3>
           </div>,
         content2:
           <div>
