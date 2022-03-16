@@ -27,10 +27,6 @@ const mainBodyLandscape = (props) =>{
                 sections={props.sections}
                 order= "3"
                 />
-          <SectionLandscapeCentered
-                sections={props.sections}
-                order= "4"
-                />
       </div>
   )
 };

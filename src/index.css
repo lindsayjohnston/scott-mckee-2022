@@ -6,17 +6,20 @@
   /* --accent-color: #5c5c5c; */
 }
 
+@font-face {
+  font-family: 'Monbaiti';
+  src: local('Monbaiti'), url(./fonts/monbaiti.ttf) format('ttf');
+}
+
 html{
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'Comfortaa', sans-serif;
-  /* 100,400,700 font weights */
+  font-family: 'Monbaiti';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 h1{

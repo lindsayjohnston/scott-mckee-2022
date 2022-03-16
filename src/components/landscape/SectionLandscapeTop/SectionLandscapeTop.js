@@ -10,14 +10,14 @@ const sectionLandscapeTop = (props) =>{
             </div>
             <div className="content">
 
-                <div className="top"> 
+                <div className="left"> 
                     <div className="imageDiv">
                         <img src={topSection.image}></img>
                   
                     </div>
                  
                 </div>
-                <div className="bottom">
+                <div className="right">
                   <div className="content2Div">
                       {topSection.content2}
                   </div>

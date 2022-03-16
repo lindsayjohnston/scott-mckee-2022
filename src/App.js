@@ -2,10 +2,9 @@ import React from 'react';
 import './App.css';
 import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/MainBodyLandscape';
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
-import topImage from '../src/media/images/hello-world.png';
+import topImage from '../src/media/images/boscoeWithTitle.png';
 import workImage from '../src/media/images/computer-lady-hands.png';
 import aboutImage from '../src/media/images/lindsay-glasses.png';
-import Gallery from './components/gallery/gallery';
 import Footer from './components/footer/footer';
 
 let screenOrientation= null;
@@ -18,7 +17,7 @@ if((window.innerHeight / window.innerWidth) < .87){
 class App extends React.Component {
   
   state= {
-    siteTitle: 'Lindsay K. Johnston',
+    siteTitle: 'Sean McKee - Attorney at Law',
     sectionShown:'top',
     menuModalShown: false,
     screenOrientation:screenOrientation,
@@ -29,41 +28,30 @@ class App extends React.Component {
         content1: null, 
         content2:
           <div>
-            <h1>Welcome to my portfolio!</h1>
-            <p>Take a peek at what I do...</p>
+            <h1>Affordable, dependable legal services.</h1>
+            {/* <p>Take a peek at what I do...</p> */}
           </div>,
         },
-        { id: "creative",
-        title: "Creative",
-        image: null,
-        content1: <Gallery/>,
-        content2: null,
-        },
-        { id: "web-development",
-        title: "Web Development",
+        { id: "practice",
+        title: "Practice",
         image: workImage,
         content1: 
           <div className='websiteLinks'>
             <ul>
             <li>
-                <a href="https://www.vannaoh.com/" target="_blank" rel="noreferrer">
-                  Vanna Oh! - Musician Website</a>
+                <p>Criminal Defense</p>
               </li>
               <li>
-                <a href="https://www.micahclay.us/" target="_blank" rel="noreferrer">
-                  Micah Clay - Musician Website</a>
+                <p>Civil Infractions</p>
               </li>
               <li>
-                <a href="https://github-map-real.herokuapp.com/" target="_blank" rel="noreferrer">
-                 GitHub User Map - API Study</a>
+                <p>Uncontested Divorces</p>
               </li>
               <li>
-                <a href="https://master.d2sxml8azj8dyl.amplifyapp.com/" target="_blank" rel="noreferrer">
-                 Points Calculator - CSV Upload Study</a>
+                <p>Parenting plans</p>
               </li>
               <li>
-                <a href="https://main.d25r1kk5mc9ae9.amplifyapp.com/" target="_blank" rel="noreferrer">
-                 Chipotle Clone - React.js Study</a>
+                <p>Anti-Harassment Orders</p>
               </li>
             </ul> 
           </div>   
@@ -76,23 +64,19 @@ class App extends React.Component {
         image: aboutImage,
         content1: 
           <div>
-            <h2>Lindsay K. Johnston</h2>
-            <h3>Creator & Entrepreneur</h3>
+            <h2>Our Approach</h2>
+            <p>We are dedicated to providing exceptional legal services at a price that anybody can afford.  We are willing to work within almost any budget with affordable services and payment plans.</p>
           </div>,
         content2:
-          <div>
-            <p>My work experiences have varied greatly: from the non-profit sector to the service industry, from education to creative director for a rock-and-roll band. The common threads that weave through all of my professional experiences are creativity and innovation. Whether I am creating a teaching strategy, an app or a t-shirt design, I am always looking to improve upon prior work and present the project in an engaging and professional way. I strive to communicate directly and honestly, work efficiently, and push for female representation in historically male-dominated fields.</p>
-             <a className="linkButton" href="https://lkj-website-media-jan2022.s3.us-east-2.amazonaws.com/Lindsay_Johnston_WD_Resume_Jan2022.pdf" target="_blank" rel="noreferrer">Resume</a> 
-          </div>
-          
+          null
         },
         { id: "contact",
         title: "Contact",
         image: null,
         content1: 
           <div className='contactDiv'>
-            <h3>E-mail:</h3>
-            <a href="mailto:lindsaykjohnston@outlook.com" >lindsaykjohnston@outlook.com</a>
+            <h3>Phone:</h3>
+            <p>(360) 734-0581</p>
           </div>
         },
     
