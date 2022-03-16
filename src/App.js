@@ -3,8 +3,9 @@ import './App.css';
 import MainBodyLandscape from '../src/components/landscape/MainBodyLandscape/MainBodyLandscape';
 import MainBodyPortrait from '../src/components/portrait/MainBodyPortrait/MainBodyPortrait';
 import topImage from '../src/media/images/boscoeWithTitle.png';
-import workImage from '../src/media/images/computer-lady-hands.png';
-import aboutImage from '../src/media/images/lindsay-glasses.png';
+import contractImage from '../src/media/images/contract.png';
+import gavelImage from '../src/media/images/gavel.png';
+import callImage from '../src/media/images/callToday.png';
 import Footer from './components/footer/footer';
 
 let screenOrientation= null;
@@ -25,16 +26,16 @@ class App extends React.Component {
       { id: "top",
         title: null,
         image: topImage,
-        content1: null, 
-        content2:
-          <div>
-            <h1>Affordable, dependable legal services.</h1>
-            {/* <p>Take a peek at what I do...</p> */}
-          </div>,
+        content1: 
+          <button>Free Consulation (Email)</button>
+          , 
+        content2: 
+        <p>With over a decade of experience, we offer affordable and caring legal representation for criminal and family law matters.</p>
+          ,
         },
         { id: "practice",
         title: "Practice",
-        image: workImage,
+        image: contractImage,
         content1: 
           <div className='websiteLinks'>
             <ul>
@@ -61,7 +62,7 @@ class App extends React.Component {
        
         { id: "about",
         title: "About",
-        image: aboutImage,
+        image: gavelImage,
         content1: 
           <div>
             <h2>Our Approach</h2>
@@ -72,7 +73,7 @@ class App extends React.Component {
         },
         { id: "contact",
         title: "Contact",
-        image: null,
+        image: callImage,
         content1: 
           <div className='contactDiv'>
             <h3>Phone:</h3>

@@ -31,7 +31,7 @@
     width: 100%;
     /* height: 90%; */
     max-width: 1300px;
-    background-color: coral;
+    /* background-color: coral; */
     /* that's 2% of the parent width I think */
     display: flex;
     flex-direction: row;
@@ -40,7 +40,7 @@
 
 .sectionLandscapeTop > .content > .right {
     width: 50%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     /* border: 1px solid black; */
     /* padding: 2%; */
     display: flex;
@@ -57,7 +57,7 @@
     flex-direction: column;
     align-items: center;
     margin: 20px 0px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .sectionLandscapeTop > .content > .left > .imageDiv > img{

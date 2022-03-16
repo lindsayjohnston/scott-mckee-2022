@@ -15,11 +15,11 @@ const mainBodyLandscape = (props) =>{
                sections={props.sections}/>
            <SectionLandscapeTop 
                 sections={props.sections}/>
-           <SectionLandscapeCentered 
+           <SectionLandscapeTitleLeft
                 sections={props.sections}
                 order= "1"
                 />
-           <SectionLandscapeTitleRight 
+           <SectionLandscapeCentered
                 sections={props.sections}
                 order= "2"
                 />
