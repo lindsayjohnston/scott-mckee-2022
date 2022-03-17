@@ -23,7 +23,7 @@ const mainBodyPortrait = (props) =>{
             <SectionPortrait
                 sections={props.sections}
                 order="1"
-                fontClass="fontColorLight"
+                fontClass="fontColorDark"
                 bgClass="bgColorMain" />
             <SectionPortrait 
                 sections={props.sections}

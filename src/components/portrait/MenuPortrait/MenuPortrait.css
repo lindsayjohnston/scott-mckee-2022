@@ -12,17 +12,16 @@
     justify-content: space-between; 
 }
 
-
-
 .menuPortrait > .title{
    padding: 2vw;
    /* background-color: chartreuse; */
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
+   width: 60%;
 }
-.menuPortrait > .title > h1{
-    font-size: 4vh;
+.menuPortrait > .title h1{
+    font-size: 1.5rem;
     /* background-color: darkgrey; */
  }
  .menuPortrait > .title > a:hover{
@@ -44,7 +43,7 @@
     right: 0;
     top: 0;
     height: 100vh;
-    background-color: var(--main-color);
+    background-color: var(--dark-color);
     width: 90vw;
     /* display: none; */
 }
@@ -74,11 +73,13 @@
 }
 
 .menuPortrait > .menuModal > .menuModalLinks > a{
-
     font-weight: bold;
     width: 30%;
 }
 
+.menuPortrait > .menuModal > .menuModalLinks > a:hover{
+    color: var(--main-color);
+}
 
 
 

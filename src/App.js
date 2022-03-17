@@ -27,10 +27,10 @@ class App extends React.Component {
         title: null,
         image: topImage,
         content1: 
-          <button>Free Consulation (Email)</button>
+          <button className='linkButton'>Free Consulation (Email)</button>
           , 
         content2: 
-        <p>With over a decade of experience, we offer affordable and caring legal representation for criminal and family law matters.</p>
+        <p>Affordable, dependable legal services.</p>
           ,
         },
         { id: "practice",
@@ -67,6 +67,7 @@ class App extends React.Component {
           <div>
             <h2>Our Approach</h2>
             <p>We are dedicated to providing exceptional legal services at a price that anybody can afford.  We are willing to work within almost any budget with affordable services and payment plans.</p>
+            <p>With over a decade of experience, we offer affordable and caring legal representation for criminal and family law matters.</p>
           </div>,
         content2:
           null
@@ -78,6 +79,12 @@ class App extends React.Component {
           <div className='contactDiv'>
             <h3>Phone:</h3>
             <p>(360) 734-0581</p>
+            <h3>Fax:</h3>
+            <p>(360) 734-1850</p>
+            <h3>Email:</h3>
+            <a href="mailto:mckeelawfirm@gmail.com">mckeelawfirm@gmail.com</a>
+            <p></p>
+            <h3><a href="https://www.facebook.com/mckeelawfirm">Find us on Facebook</a></h3>
           </div>
         },
     

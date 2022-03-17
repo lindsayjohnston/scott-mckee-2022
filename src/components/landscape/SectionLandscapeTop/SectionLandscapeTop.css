@@ -47,22 +47,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .sectionLandscapeTop > .content > .left {
     width: 50%;
     /* border: 1px solid black; */
     /* padding: 2%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     margin: 20px 0px;
     /* background-color: pink; */
 }
+.sectionLandscapeTop > .content > .left > .imageDiv{
+    /* background-color: aquamarine; */
+    /* width:fit-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .sectionLandscapeTop > .content > .left > .imageDiv > img{
-    width: 100%;
+    width: 80%;
+    padding: 20px;
     /* background-color: thistle; */
+    /* border: 1px solid black; */
 }
 
 /* .sectionLandscapeTop > .content > .left > .content1div > button > a {

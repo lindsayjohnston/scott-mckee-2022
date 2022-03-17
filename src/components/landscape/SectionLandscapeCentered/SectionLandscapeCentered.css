@@ -1,6 +1,6 @@
 .sectionLandscapeCentered{
     background-color: var(--main-color);
-    color: var(--light-color);
+    color: var(--dark-color);
     /* height: 500px; */
     display: flex;
     flex-direction: column;
