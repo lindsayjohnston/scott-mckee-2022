@@ -30,7 +30,7 @@ class App extends React.Component {
           <button className='linkButton'>Free Consulation (Email)</button>
           , 
         content2: 
-        <p>Affordable, dependable legal services.</p>
+        <h2 style={{margin: "20px"}}>Affordable, dependable legal services.</h2>
           ,
         },
         { id: "practice",
