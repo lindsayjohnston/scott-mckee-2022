@@ -27,7 +27,11 @@ class App extends React.Component {
         title: null,
         image: topImage,
         content1: 
-          <button className='linkButton'>Free Consulation (Email)</button>
+          <button className='linkButton'>
+            <a className='buttonLink' href="mailto:admin@seanmckeelaw.com">
+              Free Consulation
+            </a>
+          </button>
           , 
         content2: 
         <h2 style={{margin: "20px"}}>Affordable, dependable legal services.</h2>
@@ -70,7 +74,10 @@ class App extends React.Component {
             <p>With over a decade of experience, we offer affordable and caring legal representation for criminal and family law matters.</p>
           </div>,
         content2:
-          null
+        <div>
+        <h2>A Focus on Results</h2>
+        <p>Sean McKee is a criminal defense attorney with over 10 years experience in handling all types of felony and misdemeanor charges with a focus on DUI defense.  From plea negotiation to suppression motions and all the way to jury trials there is nothing this office hasn't handled.  We know how confusing this system is and how to help guide you through this difficult process with an experienced lawyer at your side.  We handle cases throughout the State with our home right here in Bellingham.</p>
+      </div>
         },
         { id: "contact",
         title: "Contact",
@@ -82,9 +89,9 @@ class App extends React.Component {
             <h3>Fax:</h3>
             <p>(360) 734-1850</p>
             <h3>Email:</h3>
-            <a href="mailto:mckeelawfirm@gmail.com">mckeelawfirm@gmail.com</a>
+            <a href="mailto:admin@seanmckeelaw.com" style={{margin: "0px"}}>admin@seanmckeelaw.com</a>
             <p></p>
-            <h3><a href="https://www.facebook.com/mckeelawfirm">Find us on Facebook</a></h3>
+            <h3><a href="https://www.facebook.com/mckeelawfirm" style={{margin: "0px"}}>Find us on Facebook</a></h3>
           </div>
         },
     

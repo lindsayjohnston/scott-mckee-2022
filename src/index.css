@@ -83,7 +83,7 @@ a:hover{
   text-decoration: none;
   background: var(--dark-color);
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: unset;
   color: var(--light-color);
   font-weight: bold;
   cursor: pointer;
@@ -113,4 +113,17 @@ a:hover{
 
 .linkButton:active {
   transform: scale(0.99);
+}
+
+.buttonLink {
+  display: inline-block;
+  /* width: 100%; */
+  height: 100%;
+  padding: 10px;
+  margin: unset;
+  width: 300px;
+}
+
+.buttonLink:hover{
+  color: var(--dark-color)
 }
